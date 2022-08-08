@@ -1,1 +1,9 @@
-# 你好
+#-----------------------------------------
+# setting ONE columns of a dataframe
+df.列名 = df.列名.astype(int)
+# setting ALL cokumns
+for i in df:
+    df[i] = df[i].apply(lambda x: float(x.replace(',','')))
+    
+#-----------------------------------------    
+    
