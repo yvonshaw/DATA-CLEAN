@@ -6,4 +6,7 @@ for i in df:
     df[i] = df[i].apply(lambda x: float(x.replace(',','')))
     
 #-----------------------------------------    
-    
+# NaN replace
+df.replace('\s+','', regex=True, inplace = True)  
+# Drop用法
+Df.drop( ): 运算逻辑为，括号里应是index或column name
